@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Online Examination</title>
+    <style type="text/css">
+    <!--Add a folder in same directory as the webpage, named 'Online Examination_files' with all files -->
+    <!--wallpaper1.jpg, audio.mp3, video.mp4, logo.png, candidate.png, Answer.pdf, Qpaper.pdf;-->
+    <!--change the src address of respective tags if u want to change file extention or file name-->
+      body{
+        background-image:url('Online Examination_files/wallpaper1.jpg');
+        background-repeat:no-repeat;
+        background-attachment : fixed;
+        background-size: cover ;
+      }
+      #blink{
+        color: #ff00d4;
+        font-size: 15px;
+        font-weight: bold;
+        text-align: center;
+        transition: 0.2s;
+      } 
+    .Table
+    {
+        display: table;
+        width:100%;
+    }
+    .Title
+    {
+        display: table-caption;
+        text-align: center;
+        font-weight: bold;
+        font-size: larger;
+    }
+    .Heading
+    {
+        display: table-row;
+        font-weight: bold;
+        text-align:center;
+    }
+    .Row
+    {
+        display: table-row;
+    }
+    .Cell
+    {
+        display: table-cell;
+        border: none;
+        border-width: thin;
+        padding-left: 1px;
+        padding-right: 1px;
+    }
+    </style>
+  </head>
+
+  <body ">
+    <font color="white">
+      <marquee direction="left" style="background:rgb(78, 78, 33); border: rgb(129, 190, 49) 3px SOLID" >Enter full Screen or landscape mode and use it on desktop for bettter visibility - Best of Luck Student :)</marquee>
+  </font>
+  <div class="Table" style="height: 50px;
+                            text-align: center;">
+    <div class="Title">
+    </div>
+
+
+    <div class="Row" style="background-color: #fff;
+                            background-color: rgba(105, 214, 95, 0.5)">
+        <div class="Cell" >
+          <video height="90px" width="160px" controls>
+            <source src="Online Examination_files/video.mp4" type="video/mp4">
+            <source src="Online Examination_files/video.ogg" type="video/ogg">
+            <source src="https://www.youtube.com/watch?v=licjBYeWKks" type="video/ogg">     
+              Browser does not supports video tag
+          </video>
+          <p>Instruction video</p>
+        </div>
+        <div class="Cell" style="background-color: rgb(185, 185, 204)">
+            <h1>Online Examination Portal </h1>
+            <h3>Maulana Azad National Institution of Technology, Bhopal</h3>
+        </div>
+        <div class="Cell">
+          <img src="Online Examination_files/logo.png" width ="90px" height="90px">
+          <p>MANIT,bhopal</p>
+        </div>
+
+    </div>
+
+    <div class="Row" style="background-color:#fff;
+                            background-color: rgba(161, 161, 231, 0.5)">
+      
+      <div class="Cell">
+        <img src="Online Examination_files/cadidate.png" width ="100px" height="100px">
+      
+      <p>Candidate Photo</p>
+      </div>
+      
+      <div class="Cell" style="text-align:left">
+        <p>Scholar Number : 181114xxx</p>
+          <p>Candidate Name: Student Name</p>
+      </div>
+      
+      <div class="Cell" >
+          <p>Maximum Marks: 100</p>
+          <p>Time alloted: 180 min</p>
+      </div>
+      
+      <div>
+    </div>
+    
+  </div>
+</div>
+
+  <div class="Table" >
+    <div class="Title">
+        
+    </div>
+    <div class="Row" >
+        <div class="Cell" style="background-color: #fff;
+                                 background-color: rgba(255, 166, 107,0.5);
+                                 text-align: center;">
+          <p style="color: rgb(0, 0, 0);">Answer Sheet</p>
+          <embed src="Online Examination_files/Answer.pdf" type="application/pdf" width="100%" height="250px">
+          <p><a href="Online Examination_files/Answer.pdf">Upload your answer</a></p>
+        </div>
+
+        <div class="Cell" style="background-color: #fff;
+                                background-color: rgba(255, 166, 107,0.5);
+                                text-align: center;">
+          <p style="color: rgb(0, 0, 0);">Question Paper</p>
+          <embed src="Online Examination_files/Qpaper.pdf" type="application/pdf" width="100%" height="250px">
+          <p style="color: cyan;"><a href="files/Qpaper.pdf">Click here if its not visible in browser</a></p>
+        </div>
+    </div>
+</div>
+
+    <div style="text-align: left;
+                ">
+      <p>Instruction Audio :</p>
+      <audio width="100%" controls>
+        <source src="Online Examination_files/audio.mp3" type="audio/mp3">
+        <source src="Online Examination_files/audio.ogg" type="audio/ogg">  
+          Browser incompatible for audio tag
+      </audio>
+    </div>
+      <p style="text-align: center;">---------------------------------------------------------------------------------------</p>
+      <p id="blink" style="text-align: center;"> END of the page </p>
+    
+    <script type="text/javascript">
+      var blink=document.getElementById('blink');
+      setInterval(function() {
+        blink.style.opacity=(blink.style.opacity==0?1:0);
+      },1000);
+    </script>
+
+  </body>
+</html>
