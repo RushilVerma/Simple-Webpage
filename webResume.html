@@ -1,0 +1,89 @@
+<html>
+    <head>
+        <title>WebResume</title>
+        <style type="text/css">
+        <!--Add a folder in same directory as the webpage, named 'webResume_files' with all files -->
+        <!--image.jpg, audio.mp3, video.mp4, pdffile.pdf-->
+        <!--change the src address of respective tags if u want to change file extention or file name-->
+    
+            #blink{
+                color:blue;
+                font-size: 20 px;
+                text-align: center;
+                transition: 0.2s;
+            }
+            .Table
+    {
+        display: table;
+        width:100%;
+    }
+    .Title
+    {
+        display: table-caption;
+        text-align: center;
+        font-weight: bold;
+        font-size: larger;
+    }
+    .Heading
+    {
+        display: table-row;
+        font-weight: bold;
+        text-align:center;
+    }
+    .Row
+    {
+        display: table-row;
+    }
+    .Cell
+    {
+        display: table-cell;
+        border: none;
+        border-width: thin;
+        padding-left: 1px;
+        padding-right: 1px;
+    }
+        </style>
+    </head>
+    <body>
+        <marquee direction="left" >Here is a webpage for display of my resume</marquee>
+        
+        <div class ='Table' style='
+                                   text-align: center;'>
+            <div class='Title'>
+                <p id='blink' ><h1>RESUME</h1></p>
+            </div>
+
+            <div class ='Row' >
+                <div class="Cell" style="background: rgba(210, 105, 30, 0.623);">
+                    <img src='webResume_files/image.jpg' width="200px" height="200px">
+                    <p> Name : Student Name</p>
+                    <p> Scholar No. : 181114xxx</p>
+                    <p>::video::</p>
+                    <video width='80%' controls>
+                        <source src="webResume_files/video.mp4" type="video/mp4">
+                        <source src="webResume_files/video.ogg" type="video/ogg">
+                        Video tag not supported in browser
+                    </video>
+                    <p> ::Audio::</p>
+                    <audio width ="800%" controls>
+                        <source src="webResume_files/audio.mp3" type="audio/mp3">
+                        <source src="webResume_files/audio.ogg" type="audio/ogg">
+                        Audio Tag not supported in browser
+                    </audio>
+
+                </div>
+
+                <div class="Cell">
+                    <embed src="webResume_files/pdffile.pdf" type="application/pdf" width="80%" height="500px">
+                </div>
+            </div>
+        </div>
+
+        <script type="text/javascript">
+            var blink=document.getElementById('blink');
+            setInterval(function() {
+              blink.style.opacity=(blink.style.opacity==0?1:0);
+            },1000);
+          </script>
+    </body>
+</html>
